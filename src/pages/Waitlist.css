@@ -1,0 +1,73 @@
+/* Centering the form */
+.waitlist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../assets/background.jpg") no-repeat center center/cover;
+  }
+  
+  /* Form Box */
+  .waitlist-box {
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Form Title */
+  .waitlist-title {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Inputs */
+  .waitlist-form input,
+  .waitlist-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  /* Prevent resizing of textareas */
+  .waitlist-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff914d, #e67e22);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(45deg, #e67e22, #ff914d);
+  }
+  
+  /* Success Message */
+  .success-message {
+    font-size: 18px;
+    color: #ff914d;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  

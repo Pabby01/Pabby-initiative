@@ -1,0 +1,101 @@
+/* ========================== */
+/* 🔥 Stylish Programs Section 🔥 */
+/* ========================== */
+
+.programs {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Section Title */
+.programs-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(135, 193, 247);
+    margin-bottom: 20px;
+}
+
+/* Programs Container */
+.programs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Program Box */
+.program-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Program Images */
+.program-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Program Title */
+.program-box h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Program Description */
+.program-box p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Hover Animation */
+.program-box:hover {
+    transform: scale(1.05);
+}
+
+/* GSAP Scroll Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* ========================== */
+/* 🔥 Mobile Responsive 🔥 */
+/* ========================== */
+@media (max-width: 768px) {
+    .programs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

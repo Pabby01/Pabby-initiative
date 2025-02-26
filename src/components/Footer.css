@@ -1,0 +1,51 @@
+.footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds a blurred effect */
+    border-radius: 10px;
+  }
+  
+  .footer-content {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-content a {
+    color: #4fa3d1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-content a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+  }
+  
+  /* Centering social icons */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .footer-icons a {
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    transform: scale(1.2);
+    color: #f4a261;
+  }
+  
