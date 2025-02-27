@@ -1,30 +1,28 @@
 /* ======================== */
-/* 🔥 Transparent Glassmorphic Header 🔥 */
+/* 🔥 Glassmorphic Header 🔥 */
 /* ======================== */
 .header {
-    position: fixed;
-    top: 10px; /* Leaves small space at the top */
-    transform: translateX(-50%);
-    width: 2000px; /* Make it span most of the page width */
+    position: relative;
+    width: 100%;
     max-width: 1650px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.15); /* More transparency */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px; /* Rounded edges */
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 1000;
     transition: all 0.3s ease-in-out;
-    padding-left: 40px;
 }
 
 /* Logo */
 .logo {
     height: 50px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 /* Navigation */
@@ -78,18 +76,65 @@ nav ul li a:hover {
 /* ======================== */
 @media (max-width: 768px) {
     .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .logo {
+        height: 40px; /* Smaller logo on mobile */
+    }
+
+    /* Move hamburger to the right */
+    .hamburger {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Navigation for mobile */
+    nav ul {
+        display: none;
         flex-direction: column;
-        width: 95%;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        width: 220px;
+        border-radius: 10px;
         padding: 10px;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+    nav ul.show {
+        display: flex; /* Show when menu is open */
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 1rem;
     }
 
     .waitlist-btn {
-        margin-top: 10px;
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
     }
 }

@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Web3 Background Video */}
       <div className="video-wrapper">
         <video className="hero-video" autoPlay muted loop playsInline>
-          <source src="Videos/web4.mp4" type="video/mp4" />
+          <source src="Videos/web5.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
