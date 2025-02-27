@@ -2,7 +2,7 @@
 /* 🔥 Glassmorphic Header 🔥 */
 /* ======================== */
 .header {
-    position: relative;
+    position:absolute;
     width: 100%;
     max-width: 1650px;
     display: flex;
@@ -50,6 +50,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #53bee1;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* Waitlist Button */
